@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>arXiv Papers with Code in Machine Learning (January 2025 - June 2025)</title>
+<title>arXiv Papers with Code in Machine Learning (January 2026 - June 2026)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 
@@ -41,7 +41,7 @@ span#abs{
 }
 </style>
 </head>
-<body><div id='title' style='font-size:1.3em; font-weight:bold;'>arXiv Papers with Code in Machine Learning (January 2025 - June 2025)</div><br>
+<body><div id='title' style='font-size:1.3em; font-weight:bold;'>arXiv Papers with Code in Machine Learning (January 2026 - June 2026)</div><br>
 <div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2604.04681.pdf' target='_blank'>https://arxiv.org/pdf/2604.04681.pdf</a></span>   <span><a href='https://github.com/mrazhou/BLS' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Qing Zhou, Bingxuan Zhao, Tao Yang, Hongyuan Zhang, Junyu Gao, Qi Wang
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2604.04681">Batch Loss Score for Dynamic Data Pruning</a></div></span></div><div id='abs'>Abstract:<br><span id='abs'>Dynamic data pruning accelerates deep learning by selectively omitting less informative samples during training. While per-sample loss is a common importance metric, obtaining it can be challenging or infeasible for complex models or loss functions, often requiring significant implementation effort. This work proposes the Batch Loss Score (BLS), a computationally efficient alternative using an Exponential Moving Average (EMA) of readily available batch losses to assign scores to individual samples. We frame the batch loss, from the perspective of a single sample, as a noisy measurement of its scaled individual loss, with noise originating from stochastic batch composition. It is formally shown that the EMA mechanism functions as a first-order low-pass filter, attenuating high-frequency batch composition noise. This yields a score approximating the smoothed and persistent contribution of the individual sample to the loss, providing a theoretical grounding for BLS as a proxy for sample importance. BLS demonstrates remarkable code integration simplicity (\textbf{three-line injection}) and readily adapts existing per-sample loss-based methods (\textbf{one-line proxy}). Its effectiveness is demonstrated by enhancing two such methods to losslessly prune \textbf{20\%-50\%} of samples across \textit{14 datasets}, \textit{11 tasks} and \textit{18 models}, highlighting its utility and broad applicability, especially for complex scenarios where per-sample loss is difficult to access. Code is available at https://github.com/mrazhou/BLS.<br>
 <br>
